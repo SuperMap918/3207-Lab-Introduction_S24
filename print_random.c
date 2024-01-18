@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+char randchar() {
+	srand(time(NULL));
+	int randomNum = rand() % 26;
+	char randomChar = 'A' + randomNum;
+	return randomChar;
+}
 
 
 int main()
